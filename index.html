@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simple Note</title>
+</head>
+
+<body>
+
+    <main class="
+    w-screen min-h-screen flex flex-col gap-4 max-w-sm mx-auto bg-slate-100 p-8
+    " id="formInput">
+
+        <h1 class="text-2xl font-thin capitalize text-center">
+            Aplikasi Simple
+        </h1>
+        <!-- FORM INPUTE NOTE -->
+        <form class="w-full flex flex-col gap-4">
+            <div class="w-full flex flex-col gap-2">
+                <label for="message">Note</label>
+                <textarea id="note" class="w-full h-[120px] p-2 border-gray-300 border-[1px] rounded-md"></textarea>
+            </div>
+            <button class="w-full h-12 flex justify-center items-center bg-orange-500 text-white rounded-md">
+                Submit
+            </button>
+        </form>
+        <!-- END INPUT NORE -->
+
+        <!-- COMPONENT RENDER FROM JS -->
+        <div id="parent" class="flex flex-col gap-2"></div>
+        <!-- END COMPONENT FROM JS -->
+
+
+    </main>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
